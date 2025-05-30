@@ -116,11 +116,11 @@ p {
   position: relative;
   display: flex;
   gap: 1rem;
-  padding: 1.5rem 1rem 1.5rem 3rem;
+  padding: 1rem 1rem 1rem 2rem; /* giảm padding trái để rộng hơn */
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; /* giảm khoảng cách xuống 1rem */
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   cursor: default;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -185,9 +185,12 @@ p {
 }
 
 .timeline-image {
+  height: auto; /* bỏ fix height */
+  max-height: 220px; /* max chiều cao, vẫn giới hạn */
   width: 100%;
   max-width: 400px;
-  height: 220px;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   object-fit: cover;
